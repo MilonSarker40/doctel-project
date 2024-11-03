@@ -181,3 +181,22 @@ h5{
 h6{
 	font-size: 20px !important;
 }
+/* Common Title */
+.common-heading{
+	text-align: center;
+}
+.common-heading h5{
+	color:#1AAFE6;
+	margin-bottom: 20px;
+}
+.common-heading h2{
+	color:#243871;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.common-heading p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #4F4F4F;
+    margin-bottom: 100px;
+}
