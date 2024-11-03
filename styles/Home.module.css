@@ -1,0 +1,81 @@
+.logo a{
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+.hmBannerSecWrap{
+  background: url(../public//images/banner-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  position: relative;
+}
+.hm-Banner-Innr{
+  text-align: center;
+}
+.hm-banner-img{
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logo > a{
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+.hm-banner-dsc{
+  padding-bottom: 65px;
+}
+.hm-banner-dsc h2{
+  color: #243871;
+  text-transform: uppercase;
+  line-height: 1 !important;
+  margin-bottom: 10px;
+}
+.hm-banner-dsc h3{
+  color:#1AAFE6;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  margin-bottom: 30px;
+}
+.hm-banner-dsc p{
+  font-size: 20px;
+  line-height: 1.4;
+  color:#545454;
+  margin-bottom: 30px;
+}
+.hm-banner-dsc > a{
+  font-size: 18px;
+  line-height: 1 !important;
+  color: #fff;
+  background: #1AAFE6;
+  padding: 20px 65px;
+  border-radius: 40px;
+}
+.video-call,
+.hm-audio-call{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-call{
+  left: 140px;
+  top: 370px;
+}
+.hm-audio-call{
+  left: 140px;
+  top: 220px;
+}
+.floating-chat{
+  position: absolute;
+  right: 120px;
+  top: 330px;
+}
+.video-icon{
+  bottom: 480px;
+  right: 150px;
+  position: absolute;
+}
+

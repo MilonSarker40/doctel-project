@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 1.3;
+  color:#4F4F4F;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/**
+Containers
+*/
+.container-xlg,
+.container-lg,
+.container-md,
+.container-sm{
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-xlg:before,
+.container-xlg:after,
+.container-lg:before,
+.container-lg:after,
+.container-md:before,
+.container-md:after,
+.container-sm:beofre,
+.container-sm:after,
+.container-xs:beofre,
+.container-xs:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.container-xlg{
+	max-width: 1785px; 
+}
+.container-lg{
+	max-width: 1600px !important;
+}
+.container {
+    max-width: 1300px !important;
+    width: 100% !important;
+    margin: 0 auto;
+}
+
+.reset-list,
+.ulc{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.first:first-child{
+	padding-left: 0;
+	margin-left: 0;
+}
+.last:last-child{
+	padding-right: 0;
+	margin-right: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.hide-lg{
+	display: block!important;
+}
+.show-lg{
+	display: none!important;
+}
+.hide-md{
+	display: block!important;
+}
+.show-md{
+	display: none!important;
+}
+.hide-sm{
+	display: block!important;
+}
+.show-sm{
+	display: none!important;
+}
+.hide-xs{
+	display: block!important;
+}
+.show-xs{
+	display: none!important;
+}
+#show__sm{
+	display: none;
+}
+
+
+.hide-639{
+	display: block!important;
+}
+.show-639{
+	display: none!important;
+}
+
+.divider{
+	line-height: 0;
+	font-size: 0;
+}
+.overlay-link{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+/*
+--------------------
+ Common Padding
+--------------------
+*/
+.prd-top-100{
+	padding-top: 100px;
+}
+.prd-btm-100{
+	padding-bottom: 100px;
+}
+
+/**
+All heading
+*/
+h1,h2,h3,h4,h5,h6{
+	line-height: 1.2 !important;
+  font-weight: 700 !important;
+  font-family: "Poppins", sans-serif;
+}
+h1{
+	font-size: 72px !important;
+}
+h2{  
+	font-size: 48px !important;
+}
+h3{
+	font-size: 36px !important;
+}
+h4{
+	font-size: 28px !important;
+}
+h5{
+	font-size: 24px !important;
+}
+h6{
+	font-size: 20px !important;
+}
