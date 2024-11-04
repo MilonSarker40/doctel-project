@@ -7,6 +7,7 @@ import DoctelWork from "@/components/DoctelWork/DoctelWork";
 
 
 
+
 export default function Home() {
   return (
     <>
