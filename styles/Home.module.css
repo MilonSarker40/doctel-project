@@ -208,5 +208,132 @@ doctel-work-sec-wrap
 .doctel-work-rgt-img img{
   width: 100%;
 }
+/*
+----------------------
+client-says-sec-wrap
+---------------------- 
+*/
+.client-says-sec-wrap{
+  background:#EAEFF5;
+  padding: 100px 0 150px;
+}
+.slick-dots {
+  bottom: -80px !important;
+}
+/*
+---------------------------
+subscription-plans-sec-wrap
+---------------------------
+*/
+.subscription-plans-sec-wrap{
+  padding: 150px 0 200px;
+  background: #fff;
+}
+.subscription-plans-wrap > ul{
+  margin: 0 -15px;
+}
+.subscription-plans-wrap > ul > li{
+  width: 33.3333%;
+  float: left;
+  padding: 0 15px;
+}
+.subscription-plans-wrap > ul > li:nth-child(2) .subscription-plans-grid{
+  background: #1AAFE6;
+}
+.subscription-plans-grid{
+  box-shadow: 34.85px 29.63px 48.34px 0px #3366FF0D;
+  border: 1px solid #F8F9FF;
+  border-radius: 20px;
+  padding: 30px 30px;
+}
+.subscription-plans-grid > span{
+  display: block;
+  font-size: 21px;
+  line-height: 1;
+  color:#2D2D2D;
+  padding-bottom: 15px;
+}
+.subscription-plans-grid strong{
+  font-size: 50px;
+  line-height: 1;
+  color:#02015A;
+  font-weight: 700;
+  padding-bottom: 50px;
+  display: inline-block;
+  vertical-align: baseline;
+}
+.subscription-plans-grid strong sub{
+  font-size: 16px;
+  line-height: 1;
+  color:#3B3B3B;
+  font-weight: 400;
+}
+.subscription-plans-grid ul li{
+  font-size: 18px;
+  line-height: 1;
+  color:rgba(1, 0, 125, 0.9);
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+.subscription-plans-grid ul li:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: url(../public/images/checkmark.png);
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  width: 16px;
+  height: 12px;
+}
+.subscription-plans-grid a{
+  display:block;
+  text-decoration: none;
+  background:#E5F4F2;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  color: #1AAFE6;
+  padding: 20px 100px;
+  border-radius: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+.subscription-plans-wrap > ul > li:nth-child(2) .subscription-plans-grid ul li:after{
+  background: url(../public/images/checkmark-white.png);
+}
+.subscription-plans-wrap > ul > li:nth-child(2) .subscription-plans-grid ul li{
+  color: #fff;
+}
+.subscription-plans-wrap > ul > li:nth-child(2) .subscription-plans-grid a{
+  background: #fff;
+}
+.subscription-plans-wrap > ul > li:nth-child(2) .subscription-plans-grid strong sub,
+.subscription-plans-wrap > ul > li:nth-child(2) .subscription-plans-grid strong,
+.subscription-plans-wrap > ul > li:nth-child(2) .subscription-plans-grid > span{
+  color: #fff;
+}
+.subscription-plans-wrap > ul > li:nth-child(2) .subscription-plans-grid a > span{
+  position: relative;
+  padding-right: 25px;
+}
+.subscription-plans-wrap > ul > li:nth-child(2) .subscription-plans-grid a > span:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../public/images/ArrowRight.png);
+  background-repeat: no-repeat;
+  background-size: 21px 20px;
+  width: 21px;
+  height: 20px;
+}
+
+
+
 
 
