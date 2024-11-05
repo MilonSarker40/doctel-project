@@ -153,22 +153,25 @@ doctel-work-sec-wrap
 */
 .doctel-work-sec-wrap{
   padding: 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 .doctel-work-grid{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 75px;
+  padding-bottom: 100px;
+  position: relative;
 }
 .doctel-work-img{
-  width: 50%;
+  width: 40%;
   padding-right: 45px;
 }
 .doctel-work-img img{
   width: 100%;
 }
 .doctel-work-dsc-innr{
-  width: 50%;
+  width: 60%;
   padding-left: 45px;
 }
 .doctel-work-dsc{
@@ -332,6 +335,17 @@ subscription-plans-sec-wrap
   width: 21px;
   height: 20px;
 }
+/*
+----------------------
+contact-us-sec-wrap
+---------------------- 
+*/
+.contact-us-sec-wrap{
+  background:#243871;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
 
 
 

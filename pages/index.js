@@ -7,6 +7,8 @@ import DoctelWork from "@/components/DoctelWork/DoctelWork";
 import ClientSays from "@/components/ClientSays/ClientSays";
 import AppDownload from "@/components/AppDownload/AppDownload";
 import SubscriptionPlans from "@/components/SubscriptionPlans/SubscriptionPlans";
+import ContactUs from "@/components/ContactUs/ContactUs";
+import Footer from "@/components/Footer/Footer";
 
 
 
@@ -20,6 +22,8 @@ export default function Home() {
       <ClientSays />
       <AppDownload />
       <SubscriptionPlans />
+      <ContactUs />
+      <Footer />
     </>
   );
 }
