@@ -205,50 +205,13 @@ h6{
  Client Slider Css
 -------------------- 
 */
-.client-says-slide-item-dsc{
-	text-align: center;
-}
-.client-says-slide-item-dsc img{
-	width: 110px;
-	height: 110px;
-	border-radius: 50%;
-	display: table;
-	margin: 0 auto;
-}
-.client-says-slide-item-dsc h6{
-	font-size: 16px !important;
-	line-height: 1.3 !important;
-	color:#2D2E2E !important;
-	font-weight: 600 !important;
-	margin-top: 20px;
-	margin-bottom: 80px;
-	display: none;
-}
-.client-says-slide-item-dsc p {
-    font-size: 16px !important;
-    line-height: 1.2 !important;
-    margin-bottom: 0;
-    position: absolute;
-    left: 35.5%;
-    bottom: 0;
-    transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    width: 100%;
-    font-weight: 400;
-	display: none;
-}
-.slick-current .client-says-slide-item-dsc h6,
-.slick-current .client-says-slide-item-dsc p{
-	display: block;
-}
 .slick-prev {
     left: 29% !important;
-    top: 95% !important;
+    top: 92% !important;
 }
 .slick-next {
     right: 29% !important;
-    top: 95% !important;
+    top: 92% !important;
 }
 .slick-prev,
 .slick-next {
@@ -465,4 +428,220 @@ footer-sec-wrap
     left: -280px;
     right: -180px;
     bottom: 31%;
+}
+
+/*
+-----------------------
+ Responsive Css
+----------------------- 
+*/
+@media(max-width:1399px){
+
+}
+@media(max-width:1199px){
+	h1{
+		font-size: 68px !important;
+	}
+	h2{  
+		font-size: 44px !important;
+	}
+	h3{
+		font-size: 34px !important;
+	}
+	h4{
+		font-size: 27px !important;
+	}
+	h5{
+		font-size: 23px !important;
+	}
+	h6{
+		font-size: 20px !important;
+	}
+	.common-heading p br {
+		display: none;
+	}
+	.common-heading p {
+		margin-bottom: 70px;
+	}
+	#DoctelWorkGridImg2 > img {
+		bottom: -200px;
+		max-width: 200px;
+	}
+	.contact-us-lft {
+		padding-right: 70px;
+	}
+	.contact-us-from {
+		padding: 50px 50px;
+	}
+}
+
+@media(max-width:991px){
+	h1{
+		font-size: 64px !important;
+	}
+	h2{  
+		font-size: 42px !important;
+	}
+	h3{
+		font-size: 32px !important;
+	}
+	h4{
+		font-size: 26px !important;
+	}
+	h5{
+		font-size: 22px !important;
+	}
+	h6{
+		font-size: 19px !important;
+	}
+	#DoctelWorkGridImg2 > img {
+		bottom: -130px;
+		max-width: 160px;
+	}
+	#DoctelWorkGridImg3 > img {
+		max-width: 200px;
+	}
+	#DoctelWorkGridImg3 > img,
+	#DoctelWorkGridImg2 > img,
+	#DoctelWorkGridImg1 > img {
+		display: none;
+	}
+	.contact-us-lft {
+		padding-right: 15px;
+	}
+	.contact-us-from {
+		padding: 50px 30px;
+	}
+	.footer-wrap {
+		display: block;
+	}
+	.footer-logo{
+		display: table;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	.footer-socail-icon{
+		display: table;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+	.footer-menu ul li {
+		padding: 0 5px;
+	}
+	.footer-menu ul li a{
+		font-size: 16px;
+	}
+	.footer-sec-wrap {
+		padding: 30px 0;
+	}
+}
+
+@media(max-width:767px){
+	h1{
+		font-size: 58px !important;
+	}
+	h2{  
+		font-size: 40px !important;
+	}
+	h3{
+		font-size: 30px !important;
+	}
+	h4{
+		font-size: 25px !important;
+	}
+	h5{
+		font-size: 21px !important;
+	}
+	h6{
+		font-size: 18px !important;
+	}
+	.common-heading h5 {
+		margin-bottom: 10px;
+	}
+	.common-heading h2 {
+		margin-bottom: 15px;
+	}
+	.common-heading p {
+		font-size: 16px;
+		margin-bottom: 60px;
+	}
+	#DoctelWorkGridImg1 > img {
+		bottom: -100px;
+	}
+	.contact-us-wrap{
+		display: block;
+	}
+	.contact-us-lft {
+		padding-right: 0;
+		width: 100%;
+	}
+	.contact-us-rgt {
+		width: 100%;
+	}
+	.contact-us-info p {
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	.contact-us-from-field textarea,
+	.contact-us-from-field input {
+		width: 100%;
+		height: 50px;
+		padding: 15px 20px;
+		font-size: 16px;
+	}
+	.contact-us-from-field {
+		margin-bottom: 20px;
+	}
+	.contact-us-from-field textarea {
+		height: 100px;
+	}
+	.contact-us-info ul li a {
+		font-size: 16px;
+		padding-left: 30px;
+	}
+}
+
+@media(max-width:575px){
+	h1{
+		font-size: 54px !important;
+	}
+	h2{  
+		font-size: 38px !important;
+	}
+	h3{
+		font-size: 28px !important;
+	}
+	h4{
+		font-size: 24px !important;
+	}
+	h5{
+		font-size: 20px !important;
+	}
+	h6{
+		font-size: 17px !important;
+	}
+}
+
+@media(max-width:479px){
+	h1{
+		font-size: 48px !important;
+	}
+	h2{  
+		font-size: 36px !important;
+	}
+	h3{
+		font-size: 26px !important;
+	}
+	h4{
+		font-size: 22px !important;
+	}
+	h5{
+		font-size: 18px !important;
+	}
+	h6{
+		font-size: 16px !important;
+	}
+	.common-heading p {
+		margin-bottom: 40px;
+	}
 }

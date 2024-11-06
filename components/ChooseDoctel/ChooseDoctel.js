@@ -12,7 +12,11 @@ const ChooseDoctel = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-12'>
-                        <CommonHeading title1='Care That Fits Your Lifestyle' title='Why Choose DocTel' title2='DocTel brings expert medical advice to your fingertips. With video and audio calls, chat options, and easy document uploads, getting the healthcare you need has never been more convenient. Say goodbye to waiting rooms and hello to instant, secure consultations—anytime, anywhere'/>
+                        <div className='common-heading'>
+                            <h5>Care That Fits Your Lifestyle</h5>
+                            <h2>Why Choose DocTel</h2>
+                            <p>DocTel brings expert medical advice to your fingertips. With video and audio calls, chat options, and easy document uploads, getting the <br></br> healthcare you need has never been more convenient. Say goodbye to waiting rooms and hello to instant, secure consultations—anytime, <br></br> anywhere</p>
+                        </div>
                     </div>
                     <div className={`${classes['choose-doctel-wrap']}`}>
                         <ul className='clearfix reset-list'>

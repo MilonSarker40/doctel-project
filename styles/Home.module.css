@@ -32,7 +32,8 @@
   color: #243871;
   text-transform: uppercase;
   line-height: 1 !important;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 15px;
 }
 .hm-banner-dsc h3{
   color:#1AAFE6;
@@ -47,6 +48,8 @@
   margin-bottom: 30px;
 }
 .hm-banner-dsc > a{
+  display: inline-block;
+  vertical-align: baseline;
   font-size: 18px;
   line-height: 1 !important;
   color: #fff;
@@ -223,6 +226,53 @@ client-says-sec-wrap
 .slick-dots {
   bottom: -80px !important;
 }
+.client-says-slide-item .client-says-slide-item-dsc h6,
+.client-says-slide-item .client-says-slide-item-dsc p {
+    display: none;
+}
+
+.client-says-slide-item.active .client-says-slide-item-dsc h6,
+.client-says-slide-item.active .client-says-slide-item-dsc p {
+    display: block;
+}
+.client-says-slide-item.active .client-says-slide-item-dsc p{
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.client-says-slide-item-dsc{
+	text-align: center;
+}
+.client-says-slide-item-dsc img{
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	display: table;
+	margin: 0 auto;
+}
+.client-says-slide-item-dsc h6{
+	font-size: 16px !important;
+	line-height: 1.3 !important;
+	color:#2D2E2E !important;
+	font-weight: 600 !important;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	display: none;
+}
+/* .client-says-slide-item .client-says-slide-item-dsc p{
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0;
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: 100%;
+    font-weight: 400;
+	display: none;
+} */
+
 /*
 ---------------------------
 subscription-plans-sec-wrap
@@ -301,7 +351,7 @@ subscription-plans-sec-wrap
   line-height: 1;
   font-weight: 600;
   color: #1AAFE6;
-  padding: 20px 100px;
+  padding: 20px 30px;
   border-radius: 20px;
   margin-top: 30px;
   text-align: center;
@@ -344,6 +394,236 @@ contact-us-sec-wrap
   background:#243871;
   padding-top: 100px;
   padding-bottom: 150px;
+}
+
+
+
+
+
+/*
+-----------------------
+ Responsive Css
+----------------------- 
+*/
+@media(max-width:1399px){
+	.video-call{
+		left: 80px;
+		top: 360px;
+	}
+  .hm-audio-call{
+      left: 100px;
+      top: 220px;
+  }
+}
+@media(max-width:1199px){
+	.video-call{
+      left: 20px;
+      top: 380px;
+  }
+  .hm-audio-call{
+      left: 50px;
+      top: 220px;
+  }
+  .floating-chat {
+      right: 40px;
+      top: 350px;
+  }
+  .video-icon{
+      bottom: 480px;
+      right: 50px;
+  }
+  .choose-doctel-grid h4 br{
+    display: none;
+  }
+  .choose-doctel-wrap ul{
+    margin: 0 -15px;
+  }
+  .choose-doctel-wrap ul li {
+      padding: 0 15px;
+  }
+  .choose-doctel-dsc img {
+      max-width: 140px;
+  }
+  .choose-doctel-sec-wrap {
+      padding: 80px 0 80px;
+  }
+  .doctel-work-sec-wrap{
+      padding: 80px 0;
+  }
+  .doctel-work-img {
+      padding-right: 20px;
+  }
+  .doctel-work-dsc-innr {
+      padding-left: 20px;
+  }
+  .doctel-work-lft-innr{
+      padding-right: 20px;
+  }
+  .doctel-work-rgt-img{
+      padding-left: 20px;
+  }
+  .subscription-plans-sec-wrap {
+      padding: 120px 0 150px;
+  }
+  .subscription-plans-grid {
+      padding: 30px 20px;
+  }
+  .contact-us-sec-wrap {
+      padding-top: 80px;
+      padding-bottom: 120px;
+  }
+
+}
+
+@media(max-width:991px){
+  .hmBannerSecWrap{
+      padding-top: 20px;
+      padding-bottom: 80px;
+  }
+	.video-icon{
+      bottom: 400px;
+      right: 30px;
+  }
+  .floating-chat{
+      right: 30px;
+      top: 400px;
+  }
+  .hm-audio-call{
+      left: 30px;
+      top: 250px;
+  }
+  .video-call{
+      left: 20px;
+      top: 380px;
+      max-width: 230px;
+      width: 100%;
+  }
+  .video-call{
+      left: 20px;
+      top: 430px;
+      max-width: 180px;
+      width: 100%;
+  }
+  .hm-audio-call{
+      left: 20px;
+      top: 220px;
+  }
+  .choose-doctel-wrap ul li {
+      width: 50%;
+      margin-bottom: 20px;
+  }
+  .subscription-plans-wrap > ul > li {
+      width: 50%;
+      padding: 0 15px;
+      margin-bottom: 20px;
+  }
+}
+
+@media(max-width:767px){
+	.hm-banner-dsc p br{
+    display: none;
+  }
+  .choose-doctel-sec-wrap {
+      padding: 70px 0 70px;
+  }
+  .choose-doctel-dsc a {
+      font-size: 15px;
+      padding: 10px 15px;
+      bottom: 30px;
+  }
+  .choose-doctel-dsc img {
+      max-width: 120px;
+  }
+  .choose-doctel-grid {
+      height: 250px;
+  }
+  .doctel-work-sec-wrap {
+      padding: 50px 0;
+  }
+  .doctel-work-grid{
+    display: block;
+    padding-bottom:0;
+}
+.doctel-work-lft-innr,
+.doctel-work-img {
+    padding-right: 0;
+    width: 100%;
+}
+.doctel-work-rgt-img,
+.doctel-work-dsc-innr{
+    padding-left: 0;
+    width: 100%;
+}
+.doctel-work-img img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .doctel-work-lft-innr{
+    margin-bottom: 40px;
+  }
+  .doctel-work-img{
+    margin-top: 40px;
+  }
+  .subscription-plans-wrap > ul{
+    margin: 0;
+  }
+  .subscription-plans-wrap > ul > li {
+      width:100%;
+      padding: 0;
+      margin-bottom: 20px;
+  }
+  .subscription-plans-sec-wrap {
+      padding: 60px 0 60px;
+  }
+  .contact-us-sec-wrap {
+      padding-top: 50px;
+      padding-bottom: 70px;
+  }
+  .client-says-slide-item .client-says-slide-item-dsc h6,
+  .client-says-slide-item .client-says-slide-item-dsc p {
+      display: block;
+  }
+  .show-content {
+    display: block;
+  }
+}
+
+@media(max-width:575px){
+	.floating-chat{
+      right: 10px;
+      top: 460px;
+      max-width: 100px;
+      width: 100%;
+  }
+  .video-call{
+      left: 20px;
+      top: 460px;
+      max-width: 150px;
+      width: 100%;
+  }
+  .hm-audio-call{
+      left: 15px;
+      top: 380px;
+  }
+  .video-icon{
+      bottom: 150px;
+      right: 20px;
+  }
+  .hm-banner-dsc > a {
+      font-size: 16px;
+      padding: 15px 40px;
+      border-radius: 40px;
+  }
+  .hm-banner-dsc p {
+      font-size: 18px;
+  }
+  .choose-doctel-wrap ul li {
+      width: 100%;
+  }
+}
+
+@media(max-width:479px){
+	
 }
 
 

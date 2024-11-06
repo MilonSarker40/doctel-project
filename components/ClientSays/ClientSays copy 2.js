@@ -16,14 +16,32 @@ const ClientSays = () => {
         beforeChange: (oldIndex, newIndex) => setActiveIndex(newIndex),
         responsive: [
             {
-                breakpoint: 767,
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
-            },
+            }
         ]
     };
 
@@ -43,8 +61,7 @@ const ClientSays = () => {
                             <div className="slider-container">
                                 <Slider {...settings}>
                                     {[...Array(5)].map((_, index) => {
-                                        const isMiddleActive = index === (activeIndex + 2) % 5;
-                                        
+                                        const isMiddleActive = index === activeIndex + 2; // middle (3rd) item in view
                                         return (
                                             <div
                                                 className={`${classes['client-says-slide-item']} ${isMiddleActive ? classes['active'] : ''}`}

@@ -43,7 +43,8 @@ const ClientSays = () => {
                             <div className="slider-container">
                                 <Slider {...settings}>
                                     {[...Array(5)].map((_, index) => {
-                                        const isMiddleActive = index === (activeIndex + 2) % 5;
+                                        // Check if the item is the middle item (3rd in view) to show content
+                                        const isMiddleActive = index === (activeIndex + 2) % 5; // Wrap around to get the middle item in the view
                                         
                                         return (
                                             <div

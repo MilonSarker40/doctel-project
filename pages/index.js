@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <ChooseDoctel />
+      <ChooseDoctel/>
       <DoctelWork />
       <ClientSays />
       <AppDownload />
