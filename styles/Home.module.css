@@ -517,6 +517,14 @@ contact-us-sec-wrap
       padding: 0 15px;
       margin-bottom: 20px;
   }
+  .client-says-sec-wrap {
+      padding: 80px 0 120px;
+  }
+  .client-says-slide-item-dsc h6 {
+      margin-top: 20px;
+      margin-bottom: 40px;
+  }
+
 }
 
 @media(max-width:767px){
@@ -524,7 +532,7 @@ contact-us-sec-wrap
     display: none;
   }
   .choose-doctel-sec-wrap {
-      padding: 70px 0 70px;
+      padding: 70px 0 30px;
   }
   .choose-doctel-dsc a {
       font-size: 15px;
@@ -561,9 +569,6 @@ contact-us-sec-wrap
   .doctel-work-lft-innr{
     margin-bottom: 40px;
   }
-  .doctel-work-img{
-    margin-top: 40px;
-  }
   .subscription-plans-wrap > ul{
     margin: 0;
   }
@@ -583,8 +588,20 @@ contact-us-sec-wrap
   .client-says-slide-item .client-says-slide-item-dsc p {
       display: block;
   }
+  .client-says-slide-item .client-says-slide-item-dsc p{
+    margin-bottom: 0;
+  }
   .show-content {
     display: block;
+  }
+  .client-says-slide-item-dsc{
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+  }
+  .client-says-slide-item-dsc h6 {
+      margin-top: 20px;
+      margin-bottom: 20px;
   }
 }
 
@@ -619,6 +636,13 @@ contact-us-sec-wrap
   }
   .choose-doctel-wrap ul li {
       width: 100%;
+  }
+  .client-says-slide-item-dsc h6 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+  }
+  .client-says-sec-wrap{
+      padding: 60px 0 80px;
   }
 }
 

@@ -1,8 +1,40 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Slider from "react-slick";
-import classes from '../../styles/Home.module.css';
 import ClientSliderImg1 from '../../public/images/client-slider-img-1.png';
+import ClientSliderImg2 from '../../public/images/client-slider-img-2.png';
+import ClientSliderImg3 from '../../public/images/client-slider-img-3.png';
+import ClientSliderImg4 from '../../public/images/client-slider-img-4.png';
+import ClientSliderImg5 from '../../public/images/client-slider-img-5.png';
+import styles from '../../styles/Home.module.css';
+
+const slideItems = [
+    {
+        itemImg: ClientSliderImg1,
+        title: 'Lora Smith, creative director, New York',
+        dsce: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+    },
+    {
+        itemImg: ClientSliderImg2,
+        title: 'John Doe, product manager, California',
+        dsce: 'DocTel is a life-saver! It makes medical advice accessible to everyone at any time.',
+    },
+    {
+        itemImg: ClientSliderImg3,
+        title: 'Emma Brown, software engineer, Texas',
+        dsce: 'Highly recommend DocTel for its ease and convenience in getting consultations!',
+    },
+    {
+        itemImg: ClientSliderImg4,
+        title: 'Liam Wilson, entrepreneur, Florida',
+        dsce: 'DocTel’s quick response times and reliable doctors have been a huge help.',
+    },
+    {
+        itemImg: ClientSliderImg5,
+        title: 'Sophia Taylor, HR manager, Colorado',
+        dsce: 'Fantastic service that connects you to great healthcare professionals instantly.',
+    },
+];
 
 const ClientSays = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -21,14 +53,14 @@ const ClientSays = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: true,
                 }
             },
         ]
     };
 
     return (
-        <div className={`${classes['client-says-sec-wrap']}`}>
+        <div className={styles['client-says-sec-wrap']}>
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-12'>
@@ -42,22 +74,18 @@ const ClientSays = () => {
                         <div className='client-says-slider-cntlr'>
                             <div className="slider-container">
                                 <Slider {...settings}>
-                                    {[...Array(5)].map((_, index) => {
-                                        const isMiddleActive = index === (activeIndex + 2) % 5;
-                                        
+                                    {slideItems.map((item, index) => {
+                                        const isMiddleActive = index === (activeIndex + 2) % slideItems.length;
+
                                         return (
                                             <div
-                                                className={`${classes['client-says-slide-item']} ${isMiddleActive ? classes['active'] : ''}`}
+                                                className={`${styles['client-says-slide-item']} ${isMiddleActive ? styles['active'] : ''}`}
                                                 key={index}
                                             >
-                                                <div className={`${classes['client-says-slide-item-dsc']} ${isMiddleActive ? classes['show-content'] : classes['hide-content']}`}>
-                                                    <Image src={ClientSliderImg1} alt='Client Slider Img' />
-                                                    {isMiddleActive && (
-                                                        <>
-                                                            <h6>Lora Smith, creative director, New York</h6>
-                                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                                        </>
-                                                    )}
+                                                <div className={`${styles['client-says-slide-item-dsc']} ${isMiddleActive ? styles['show-content'] : styles['hide-content']}`}>
+                                                    <Image src={item.itemImg} alt='Client Slider Img' />
+                                                    <h6>{item.title}</h6>
+                                                    <p>{item.dsce}</p>
                                                 </div>
                                             </div>
                                         );
